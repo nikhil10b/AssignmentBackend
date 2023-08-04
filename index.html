@@ -1,0 +1,25 @@
+<<!-- public/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Candidate Records Upload</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css"> <!-- Include the external CSS file -->
+</head>
+<body>
+    <div class="above"><h2>Add from Excel</h2></div>
+  <div class="upload-window">
+    <h1>Add Candidates to database</h1>
+    <div class="upload-form">
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <label class="custom-file-upload">
+          <i class="fas fa-cloud-upload-alt upload-icon"></i> Choose Excel File
+          <input type="file" name="file" class="file-input" accept=".xlsx, .xls">
+        </label>
+        <button type="submit" class="custom-file-upload">Upload</button>
+      </form>
+    </div>
+    <div id="message"></div>
+  </div>
+</body>
+</html>
